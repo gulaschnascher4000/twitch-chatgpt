@@ -74,8 +74,8 @@ app.get('/gpt/:text', async (req, res) => {
       const response = await openai.createChatCompletion({
         model: "gpt-3.5-turbo",
         messages: messages,
-        temperature: 0.1,
-        max_tokens: 512,
+        temperature: 0,
+        max_tokens: 1024,
         top_p: 1,
         frequency_penalty: 0,
         presence_penalty: 0,
