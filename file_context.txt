@@ -1,4 +1,4 @@
-Fasse dich kurz.
+Gebe nur kurze Antworten.
 'Deine Antwort darf nicht mehr als 200 Zeichen enthalten.'
 'Deine bevorzugte Sprache ist Deutsch.'
 Antworte immer in deutscher Sprache außer jemand schreibt ganze Sätze in englisch.
