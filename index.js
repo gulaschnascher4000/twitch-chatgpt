@@ -74,7 +74,7 @@ app.get('/gpt/:text', async (req, res) => {
       const response = await openai.createChatCompletion({
         model: "gpt-3.5-turbo-0301",
         messages: messages,
-        temperature: 1.2,
+        temperature: 1.3,
         max_tokens: 2048,
         top_p: 1,
         frequency_penalty: 1,
@@ -88,9 +88,9 @@ app.get('/gpt/:text', async (req, res) => {
         messages.push({role: "assistant", content: agent_response})
 
         //Check for Twitch max. chat message length limit and slice if needed
-        if(agent_response.length > 399){
-          console.log("Agent answer exceeds twitch chat limit. Slicing to first 399 characters.")
-          agent_response = agent_response.substring(0, 399)
+        if(agent_response.length > 499){
+          console.log("Agent answer exceeds twitch chat limit. Slicing to first 499 characters.")
+          agent_response = agent_response.substring(0, 499)
           console.log ("Sliced agent answer: " + agent_response)
         }
 
