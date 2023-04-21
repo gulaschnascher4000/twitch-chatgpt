@@ -75,7 +75,7 @@ app.get('/gpt/:text', async (req, res) => {
         model: "gpt-3.5-turbo-0301",
         messages: messages,
         temperature: 0.8,
-        max_tokens: 4096,
+        max_tokens: 128,
         top_p: 1,
         frequency_penalty: 2,
         presence_penalty: 2,
